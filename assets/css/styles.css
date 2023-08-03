@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+}
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Sen", sans-serif;
+}
