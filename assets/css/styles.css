@@ -449,6 +449,9 @@ button {
   width: 63.2%;
 }
 .testimonial-content blockquote {
+  --line-clamp: 4;
+}
+.testimonial-content blockquote {
   color: #fff;
   font-size: 2.6rem;
   font-style: italic;
