@@ -91,17 +91,62 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
+    <!-- PC Header -->
     <header class="header">
       <div class="container header-container">
         <a href="#">
           <img src="./assets/img/logo.svg" alt="Lesson" class="header-logo" />
         </a>
+        <label for="menu-checkbox" class="header-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </label>
         <nav class="navbar">
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#" class="nav-link active" title="Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#courses" class="nav-link" title="Courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link" title="Pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link" title="Reviews">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn header-btn btn-1">Sign Up</button>
+      </div>
+    </header>
+    <!-- Mobile Header -->
+    <header class="header-mobile">
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <label for="menu-checkbox" class="overlay"></label>
+      <div class="menu-drawer">
+        <img src="./assets/img/logo.svg" alt="Lesson" />
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link" title="Home">Home</a>
             </li>
             <li class="nav-item">
               <a href="#courses" class="nav-link" title="Courses">Courses</a>
